@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test</h1>
+    <h2>Test</h2>
+    <h3>Test</h3>
+    <h4>Test</h4>
+    <h5>Test</h5>
+    <h6>Test</h6>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, eaque similique quia sit officia suscipit illo totam animi ratione voluptas quas neque id error voluptate in numquam magnam sapiente perspiciatis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta repellendus voluptatibus saepe amet qui veritatis obcaecati similique vitae inventore assumenda quia nemo corporis praesentium esse explicabo laborum beatae, enim eos. Veniam, neque blanditiis molestias, fugiat nemo ad facilis, laboriosam a quae officiis rerum est. Ea dolorum doloribus consectetur obcaecati.</p>
+    <p>Halo Jika tertarik silahkan  <a href="https://facebook.com" target="_blank">Klik disini</a></p>
+    <p>Kembali ke halaman Utama <a href="home.html">Home</a></p>
+<!--Ordered List-->
+    <p>Tag Elemen dasar pada html antara lain : </p>
+    <ol type="1" start="5">
+        <li>Tipografi (Judul, paragaf)</li>
+        <li>Media (gambar, vido atau audio)</li>
+        <li>HTML Table</li>
+    </ol>
+<!--Unordered List-->
+    <p>Menu makan siang : </p>
+    <ul>
+        <li>Bakso</li>
+        <li>Ikan</li>
+        <li>Ayam Bakar</li>
+    </ul>
+
+
+<!--Menggunakan Gambar-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNj7Ptsds0_SNhs31XWAj6k_yIWhxocU0jnBzVW0EoXqHR7ctXpNAQAc&s=10" 
+    width="200" alt="Example Image">
+    <img src="assets/Example.avif" alt="Example 2" width="200" >
+<!--Menggunakan Video-->
+<!--Controls untuk ada play pause dll -->
+<!--auto play and muted loop -->
+<video src="https://res.cloudinary.com/demo/video/upload/dog.mp4"  width="200" controls></video>
+<audio src="https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" controls></audio>
+
+<!--Table HTML-->
+
+<table style="width: 80dvw; margin-top: 40px; margin-bottom: 30px;" border="1"; border-collapse: collapse;>
+    <thead>
+        <th>Nama</th>
+        <th>Kota</th>
+        <th>Alamat</th>
+        <th>Status</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Asep</td>
+            <td>Jakarta Barat</td>
+            <td>Palmerah Utama</td>
+            <td>Pekerja Aktif</td>
+        </tr>
+         <tr>
+            <td>Asop</td>
+            <td colspan="3" style="color: red; text-align: center;">Pekerja non-aktif</td>
+            
+        </tr>
+             <tr>
+            <td>Usop</td>
+            <td>Jakarta Barat</td>
+            <td>Palmerah Utama</td>
+            <td>Pekerja Aktif</td>
+        </tr>
+         <tr>
+            <td>Anas</td>
+            <td>Jakarta Barat</td>
+            <td rowspan="3" style="color: rgb(14, 23, 1); text-align: center;">Palmerah 3</td>
+            <td>Pekerja Aktif</td>  
+            
+        </tr>    
+         <tr >
+            <td>Anis</td>
+             <td>Jakarta Barat</td>
+             <td>Pekerja Aktif</td>
+            
+        </tr>
+         <tr>
+            <td>Ani</td>
+             <td>Jakarta Barat</td>
+             <td>Pekerja Aktif</td>
+            
+        </tr>
+    </tbody>
+</table>
+
+<!--Form HTML-->
+
+<form action="semantic.html" method="post">
+    <div class="">
+        <label for="namaLengkap">Nama Lengkap :</label>
+        <input type="text" name="namaLengkap" id="namaLengkap" required placeholder="Nama Lengkap Kamu">
+    </div>
+    <div class="">
+        <label for="username">Username : </label>
+        <input type="text" name="username" required value="asepbot_" readonly id="username">
+    </div>
+    <div>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" required>
+    </div>
+      <div class="">
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" required>
+    </div>
+      <div class="">
+        <label for="alamat">Alamat :</label>
+        <textarea name="alamat" id="alamat"></textarea>
+    </div>
+     <div class="">
+        <label for="divisi">Divisi :</label>
+        <select name="divisi" id="">divisi
+        <option value="" disabled >Pilih divisi</option>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+        <option value="Project-Manager">Project Manager</option>
+        </select>
+    </div>
+    <div>
+        
+        <button type="submit">Kirim</button>
+    </div>
+</form>
+
+
+
+
+</body>
+</html>
